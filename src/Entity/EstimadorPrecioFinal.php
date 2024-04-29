@@ -41,6 +41,5 @@ class EstimadorPrecioFinal
             //Debería identificar el tipo de clase del producto, y en base a eso hacer determinadas cuentas
             $sumaTotal= $sumaTotal + $productoReservado->getPrecio();
             }
-        }
     }
 }

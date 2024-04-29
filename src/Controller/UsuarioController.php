@@ -23,7 +23,12 @@ class UsuarioController extends AbstractController
         usort($usuarios, function($a, $b) {
             return $b->getProductosAdquiridos() <=> $a->getProductosAdquiridos();
         });
+        
+        return $this->render('usuario/index.html.twig', [
+            'usuarios' => $usuarios
+
+        ]);
+
     }
 
-    public function
 }
